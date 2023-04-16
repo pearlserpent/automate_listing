@@ -1,7 +1,5 @@
-from borb.pdf import Document
+from PyPDF2 import PdfReader, DocumentInformation
 
-with open("list.pdf", "rb") as f:
-    pdf = Document.from_bytes(f.read())
+reader = PdfReader("list.pdf")
 
-for page in pdf.pages:
-    print(page.get_text())
+print(reader.getDocumentInfo())
