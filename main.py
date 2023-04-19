@@ -1,9 +1,8 @@
 import requests
+from bs4 import BeautifulSoup
 
 # first step to automate downloading the list
 
-import requests
-from bs4 import BeautifulSoup
 
 # Set the URL of the website to scrape
 url = 'https://main.sci.gov.in/causelist'
