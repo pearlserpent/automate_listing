@@ -3,7 +3,7 @@ from pypdf import PdfReader
 
 # Converting list from pdf to txt
 
-reader = PdfReader("F_J_1.pdf")
+reader = PdfReader("list.pdf")
 number_of_pages = len(reader.pages)
 
 
